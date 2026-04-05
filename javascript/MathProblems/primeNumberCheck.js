@@ -16,4 +16,4 @@ if (n <= 1) {
   } else {
     console.log("Not Prime");
   }
-}
+} 
