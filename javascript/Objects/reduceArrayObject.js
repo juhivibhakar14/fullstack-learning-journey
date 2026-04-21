@@ -5,11 +5,8 @@ let students = [
     {name: "Smith", age: 21, grade: "C"}
 ];
 
-let filteredStudents = students.reduce((acc, student) => {
-    if (student.age > 20) {
-        acc.push(student.name);
-    }
-    return acc;
-}, []);
-console.log("Filtered Students:", filteredStudents);
+let total = students.reduce((acc, s) => acc + s.age, 0);
+let avg = total / students.length;
+
+console.log("Average age:", avg);
 

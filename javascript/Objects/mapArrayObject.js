@@ -5,6 +5,6 @@ let students = [
     {name: "Smith", age: 21, grade: "C"}
 ];
 
-let filteredStudents = students.map(s => s.name);
-console.log("Filtered Students:", filteredStudents);
+let mappedStudents = students.map(s => s.name);
+console.log("Mapped Students:", mappedStudents);
 
