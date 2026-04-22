@@ -1,4 +1,3 @@
-let even = (num) =>num %2 === 0 ? console.log("Even") : console.log("Odd");
+let even = (num) => num % 2 === 0;
 
-even(10);
-even(15);
+console.log(even(10) ? "Even" : "Odd");
