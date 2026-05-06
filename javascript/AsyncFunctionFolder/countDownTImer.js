@@ -1,11 +1,11 @@
-console.log("Start");
 let counter = 0;
-setInterval(()=> {
+
+let id = setInterval(()=> {
     counter++;
     console.log(counter);
 }, 1000);
+
 setTimeout(() => {
     console.log("Time's up!");
-    clearInterval(counter);
+    clearInterval(id);
 }, 5000);
-console.log("End");
