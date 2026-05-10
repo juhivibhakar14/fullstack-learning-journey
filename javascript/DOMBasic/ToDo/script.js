@@ -26,6 +26,6 @@ addBtn.addEventListener("click", () => {
   // add li to list
   list.appendChild(li);
 
-  // clear input
+  // clear inputx   
   input.value = "";
 });
