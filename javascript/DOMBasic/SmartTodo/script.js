@@ -3,14 +3,17 @@ let addBtn = document.getElementById("addBtn");
 let loadBtn = document.getElementById("loadBtn");
 let list = document.getElementById("list");
 
-addBtn.addEventListener(click,() =>{
- let task = input.value;
+// add manual todo
+addBtn.addEventListener("click", () => {
+
+  let task = input.value;
 
   if(task === "") return;
 
   createTodo(task);
 
   input.value = "";
+
 });
 
 // reusable function
