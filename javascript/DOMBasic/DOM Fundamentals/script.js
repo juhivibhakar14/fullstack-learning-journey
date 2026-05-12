@@ -5,6 +5,7 @@ let colorBtn = document.getElementById("colorBtn");
 let hideBtn = document.getElementById("hideBtn");
 let showBtn = document.getElementById("showBtn");
 let hideshow = document.getElementById("hideShow");
+let count = 0;
 
 colorBtn.addEventListener("click", () => {
 
@@ -12,9 +13,12 @@ colorBtn.addEventListener("click", () => {
 
 });
 
+
 counter.addEventListener("click", () => {
 
-    text.textContent = textInput.value;
+    count++;
+
+    text.textContent = count;
 
 });
 
@@ -27,5 +31,4 @@ hideBtn.addEventListener("click", () => {
 showBtn.addEventListener("click", () => {
 
     hideshow.style.display = "block";
-
 });
