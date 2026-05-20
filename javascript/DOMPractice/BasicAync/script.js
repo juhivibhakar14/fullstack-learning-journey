@@ -8,36 +8,85 @@ let timerText = document.getElementById('timer');
 let startBtn = document.getElementById('startBtn');
 
 
+// ----------------------
 // Loading Simulation
-loadBtn.addEventListener('click', () => {
+// ----------------------
 
-    loadingText.textContent = 'Loading...';
+loadBtn.addEventListener('click', async () => {
 
-    setTimeout(() => {
+    loadBtn.disabled = true;
 
-        loadingText.textContent = 'Data Loaded!';
+    loadingText.textContent = "Loading...";
 
-    }, 2000);
+    // Promise
+    let promise = new Promise((resolve) => {
+
+        setTimeout(() => {
+
+            resolve("Data Loaded!");
+
+        }, 2000);
+
+    });
+
+    // await
+    let result = await promise;
+
+    loadingText.textContent = result;
+
+    loadBtn.disabled = false;
 
 });
 
 
+// ----------------------
 // Fake API Delay
-fetchBtn.addEventListener('click', () => {
+// ----------------------
 
-    userText.textContent = 'Fetching user...';
+fetchBtn.addEventListener('click', async () => {
 
-    setTimeout(() => {
+    fetchBtn.disabled = true;
 
-        userText.textContent = 'User: John Doe';
+    userText.textContent = "Fetching user...";
 
-    }, 3000);
+    // fake api promise
+    let fakeApi = new Promise((resolve) => {
+
+        setTimeout(() => {
+
+            let users = [
+                "John Doe",
+                "Jane Smith",
+                "Alex Brown",
+                "Emma Wilson"
+            ];
+
+            let randomUser =
+                users[Math.floor(Math.random() * users.length)];
+
+            resolve(randomUser);
+
+        }, 3000);
+
+    });
+
+    // await response
+    let user = await fakeApi;
+
+    userText.textContent = `User: ${user}`;
+
+    fetchBtn.disabled = false;
 
 });
 
 
+// ----------------------
 // Countdown Timer
+// ----------------------
+
 startBtn.addEventListener('click', () => {
+
+    startBtn.disabled = true;
 
     let count = 10;
 
@@ -52,9 +101,11 @@ startBtn.addEventListener('click', () => {
         if (count === 0) {
 
             clearInterval(intervalId);
-startBtn.disabled = true;
+
             timerText.textContent = "Time's Up!";
-startBtn.disabled = false;
+
+            startBtn.disabled = false;
+
         }
 
     }, 1000);
