@@ -3,6 +3,11 @@ import ProductCard from "./components/ProductCard";
 import MovieCard from "./components/MovieCard";
 import Header from "./header";
 import Navbar from "./navbar";
+import ClickLogger from "./components/events/ClickLogger";
+import DoubleCLick from "./components/events/DoubleClickEvent";
+import InputLogger from "./components/events/InputLogger";
+import SearchBox from "./components/events/SearchBox";
+import FormSubmit from "./components/events/FormSubmit";
 
 function App() {
   return (
@@ -21,13 +26,17 @@ function App() {
         address="123 Main St"
       />
 
-      <ProductCard
-        name="Rice"
-        category="Food"
-        price="50"
-      />
+      <ProductCard name="Rice" category="Food" price="50" inStock={true} />
+      <ProductCard name="Shirt" category="Clothing" price="1200" inStock={false} />
+      <ProductCard name="Shoes" category="Footwear" price="800" inStock={true} />
+      <ClickLogger />
+      <DoubleCLick />
+      <InputLogger />
+      <SearchBox />
+      <FormSubmit />
+      
     </>
   );
-}
+} 
 
 export default App;
