@@ -8,6 +8,7 @@ import DoubleCLick from "./components/events/DoubleClickEvent";
 import InputLogger from "./components/events/InputLogger";
 import SearchBox from "./components/events/SearchBox";
 import FormSubmit from "./components/events/FormSubmit";
+import MouseEnter from "./components/events/MouseEnter";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
       <InputLogger />
       <SearchBox />
       <FormSubmit />
-      
+      <MouseEnter />
+
     </>
   );
 } 
