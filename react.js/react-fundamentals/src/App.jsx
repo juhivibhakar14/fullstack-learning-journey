@@ -9,6 +9,14 @@ import InputLogger from "./components/events/InputLogger";
 import SearchBox from "./components/events/SearchBox";
 import FormSubmit from "./components/events/FormSubmit";
 import MouseEnter from "./components/events/MouseEnter";
+import Counter from "./components/state/counter";
+import NameChanger from "./components/state/NameChanger";
+import AgeIncrementer from "./components/state/AgeIncrementer";
+import LivePreview from "./components/state/InputLivePreview";
+import CharacterCounter from "./components/state/CharacterCOunter";
+import SizeChanger from "./components/state/FontSizeChanger";
+import ColorChanger from "./components/state/BackgroundColorChanger";
+import MarksCalculator from "./components/state/MarksCalculator";
 
 function App() {
   return (
@@ -36,6 +44,14 @@ function App() {
       <SearchBox />
       <FormSubmit />
       <MouseEnter />
+      <Counter />
+      <NameChanger />
+      <AgeIncrementer />
+      <LivePreview />
+      <CharacterCounter />
+      <SizeChanger />
+      <ColorChanger />
+      <MarksCalculator />
 
     </>
   );
