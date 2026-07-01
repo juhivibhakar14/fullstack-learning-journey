@@ -17,6 +17,8 @@ import CharacterCounter from "./components/state/CharacterCOunter";
 import SizeChanger from "./components/state/FontSizeChanger";
 import ColorChanger from "./components/state/BackgroundColorChanger";
 import MarksCalculator from "./components/state/MarksCalculator";
+import ShowText from "./components/conditionalRendering/showText";
+import LoginLogout from "./components/conditionalRendering/LoginLogout";
 
 function App() {
   return (
@@ -51,7 +53,9 @@ function App() {
       <CharacterCounter />
       <SizeChanger />
       <ColorChanger />
-      <MarksCalculator />
+      <MarksCalculator /> 
+      <ShowText />
+      <LoginLogout />
 
     </>
   );
