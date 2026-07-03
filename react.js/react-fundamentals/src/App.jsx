@@ -19,6 +19,11 @@ import ColorChanger from "./components/state/BackgroundColorChanger";
 import MarksCalculator from "./components/state/MarksCalculator";
 import ShowText from "./components/conditionalRendering/showText";
 import LoginLogout from "./components/conditionalRendering/LoginLogout";
+import ShowHide from "./components/conditionalRendering/ShowHIde";
+import ShoppingCart from "./components/conditionalRendering/ShoppingCart";
+import AdminPanel from "./components/conditionalRendering/AdminPanel";
+import WeatherApp from "./components/conditionalRendering/WeatherApp";
+import Notification from "./components/conditionalRendering/Notification";
 
 function App() {
   return (
@@ -56,6 +61,12 @@ function App() {
       <MarksCalculator /> 
       <ShowText />
       <LoginLogout />
+      <ShowHide />
+      <ShoppingCart />
+      <AdminPanel />
+      <Notification />
+      <WeatherApp />
+
 
     </>
   );
