@@ -24,6 +24,10 @@ import ShoppingCart from "./components/conditionalRendering/ShoppingCart";
 import AdminPanel from "./components/conditionalRendering/AdminPanel";
 import WeatherApp from "./components/conditionalRendering/WeatherApp";
 import Notification from "./components/conditionalRendering/Notification";
+import ResultApp from "./components/conditionalRendering/Result";
+import StudentList from "./components/renderingLists/StudentList";
+import Theme from "./components/conditionalRendering/LightDark";
+import ProductStore from "./components/renderingLists/ProductStore";
 
 function App() {
   return (
@@ -66,7 +70,10 @@ function App() {
       <AdminPanel />
       <Notification />
       <WeatherApp />
-
+      <ResultApp />
+      <Theme />
+      <StudentList />
+      <ProductStore />
 
     </>
   );
