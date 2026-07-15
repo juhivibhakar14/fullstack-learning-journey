@@ -69,13 +69,13 @@ function EmployeeForm() {
       <br />
       <br />
 
-      <input
-        type="text"
-        name="department"
-        placeholder="Enter Department"
-        value={formData.department}
-        onChange={handleChange}
-      />
+        <input
+          type="text"
+          name="department"
+          placeholder="Enter Department"
+          value={formData.department}
+          onChange={handleChange}
+        />
 
       <br />
       <br />
