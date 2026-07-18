@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 
-function CounterLogger() {
+function BrowserTitleUpdater() {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("Count changed:", count);
+    document.title = `Count: ${count}`;
   }, [count]);
 
-  function handleChange() {
+  function handleClick() {
     setCount(count + 1);
   }
 
@@ -15,11 +15,11 @@ function CounterLogger() {
     <>
       <h1>{count}</h1>
 
-      <button onClick={handleChange}>
+      <button onClick={handleClick}>
         Increment
       </button>
     </>
   );
 }
 
-export default CounterLogger;
+export default BrowserTitleUpdater;
