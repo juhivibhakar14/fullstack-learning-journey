@@ -22,4 +22,4 @@ function BrowserTitleUpdater() {
   );
 }
 
-export default BrowserTitleUpdater;
+export default BrowserTitleUpdater; 
