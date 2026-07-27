@@ -1,7 +1,7 @@
 import { useRef } from "react";
 
 function InputFocus() {
-  const inputRef = useRef(null);
+  const inputRef = useRef(0);
 
   function handleFocus() {
     inputRef.current.focus();

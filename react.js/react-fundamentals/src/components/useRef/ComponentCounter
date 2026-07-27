@@ -1,0 +1,24 @@
+import { useRef, useState } from "react";
+
+function ComponentCounter() {
+  const [count, setCount] = useState(0);
+  const renderCountRef = useRef(0);
+
+  // Count every render
+  renderCountRef.current++;
+
+  function handleAdd() {
+    setCount(count + 1);
+  }
+
+  return (
+    <div>
+      <h2>Count: {count}</h2>
+      <h2>Component Render Count: {renderCountRef.current}</h2>
+
+      <button onClick={handleAdd}>Add</button>
+    </div>
+  );
+}
+
+export default ComponentCounter; 
