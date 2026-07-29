@@ -8,7 +8,7 @@ function StopWatch() {
       console.log("Running...");
     }, 1000);
   }
-
+  
   function handleStop() {
     clearInterval(intervalRef.current);
   }

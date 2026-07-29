@@ -13,11 +13,12 @@ import Counter from "./components/state/counter";
 import NameChanger from "./components/state/NameChanger";
 import AgeIncrementer from "./components/state/AgeIncrementer";
 import LivePreview from "./components/state/InputLivePreview";
-import CharacterCounter from "./components/state/CharacterCOunter";
+import CharacterCounter from "./components/state/CharacterCounter";
 import SizeChanger from "./components/state/FontSizeChanger";
 import ColorChanger from "./components/state/BackgroundColorChanger";
 import MarksCalculator from "./components/state/MarksCalculator";
 import ShowText from "./components/conditionalRendering/showText";
+import UseReducerCounter from "./components/useReducer/UseReducerCounter";
 import LoginLogout from "./components/conditionalRendering/LoginLogout";
 import ShowHide from "./components/conditionalRendering/ShowHIde";
 import ShoppingCart from "./components/conditionalRendering/ShoppingCart";
@@ -64,6 +65,7 @@ function App() {
       <ColorChanger />
       <MarksCalculator /> 
       <ShowText />
+      <UseReducerCounter />
       <LoginLogout />
       <ShowHide />
       <ShoppingCart />
